@@ -1,0 +1,140 @@
+
+/*wrapper-menu-mob*/
+
+.box-menu-icon {
+    height: 40px;
+    width: 55px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+
+.logo-text {
+    color: #0055ff;
+    font-weight: bold;
+}
+
+.text {
+    color: #adb5bd;
+    font-size: 0.8rem;
+    margin-top: -8px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 350px) {
+    .wrapper-menu .wrapper-menu-desk {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .wrapper-menu .wrapper-menu-mob {
+        display: none;
+    }
+
+    .wrapper-menu .wrapper-menu-desk {
+        display: block;
+    }
+
+}
+
+
+/*wrapper-menu-desk*/
+
+.box-mode {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper-menu-desk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.icon-menu {
+   margin: 5px 7px 0 0;
+}
+
+.menu {
+
+}
+
+.menu .items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu > .items > .item {
+    position: relative;
+}
+
+.menu > .items > .item:hover .sub-menu {
+    transition: ease 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu .items .item a:hover .sub-menu {
+    transition: ease 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > .items > .item > .link {
+    color: #777;
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
+}
+
+.menu > .items > .item > .link:hover {
+   color: #0055ff;
+}
+
+/* Sub Menu */
+.menu .sub-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s linear;
+    border-top: 4px solid #0055ff;
+    box-sizing: border-box;
+    margin-right: 15px;
+    text-align: justify-all;
+}
+
+.menu .sub-menu .items .item .link {
+    color:  #777;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s linear;
+    text-align: right;
+}
+
+.menu .sub-menu .items .item .link:hover {
+    background-color: #f1f1f1ad;
+    color: #0055ff;
+}
+
+.menu .sub-menu .items {
+    flex-direction: column;
+}
+
+.btn-log-reg {
+    display:flex;
+    justify-content:space-evenly;
+    margin: 10px 0 0 -70px;
+}
+
+
+
+

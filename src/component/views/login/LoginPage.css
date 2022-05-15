@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'yekan';
+
+    src: url('../../../static/font/persian/yekan.eot');
+
+    src: url('../../../static/font/persian/yekan.eot?#iefix') format('embedded-opentype'),
+    url('../../../static/font/persian/yekan.woff2') format('woff2'),
+    url('../../../static/font/persian/yekan.woff') format('woff'),
+    url('../../../static/font/persian/yekan.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+ html, body {
+     /*font-family:'yekan', sans-serif ;*/
+ }
+
+* {
+    font-family:'yekan', sans-serif ;
+}
+.wrapper {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 1.7rem;
+    text-align: right;
+    margin-bottom: 6px;
+}
+
+.text {
+    margin-top: 9px;
+    color: #495057;
+}
+
+.register {
+    color: #adb5bd;
+    text-align: right;
+}
+
+.ling-register {
+    font-weight: bold;
+    color: #0d66ff;
+}
+
+.forget-pass {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    display: block;
+}
+
+.title-gf {
+    color: #adb5bd;
+}
